@@ -6,4 +6,4 @@ for everyone that loves to go hardcore in linux experience. I will share my docs
 
 switch to i3 mode and go install
 ### sudo apt-get install -y i3blocks
-### [git clone git@github.com:FortAwesome/Font-Awesome.git](https://github.com/FortAwesome/Font-Awesome) [cheatSheet](https://fontawesome.com/v4/cheatsheet/)
+### git clone git@github.com:FortAwesome/Font-Awesome.git [git](https://github.com/FortAwesome/Font-Awesome) [cheatSheet](https://fontawesome.com/v4/cheatsheet/)
