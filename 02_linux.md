@@ -1,4 +1,4 @@
-history or locate bash_history and go print it
+```history``` or locate bash_history and go print it
 
 wget --spider --recursive https://www.google.com<br/>
 curl https://www.google.com --insecure<b/>
