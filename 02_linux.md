@@ -9,27 +9,27 @@
   ```cat /etc/passwd | tr ":" "" | awk '{print $1, $NF}' (print 1st and last devided from ":") ```<br/>
   ```cat /etc/passwd | tr ":" "" | awk '{print $1, $NF}' | sed 's/bin/HTB/g' (replace all bin with HTB) ```<br/>
  nmap -sV -A -F <ip> ``` <b/>
- systemctl list-units --type=service<br/>
- ping -c <integer> <domain || ip><br/>
+  ```systemctl list-units --type=service ```<br/>
+  ```ping -c <integer> <domain || ip> ```<br/>
 <b/>
 
- find / -type f -name *.conf -user root -seze +2-k -newermt 2020-03-03 -exec ls -al {} \;<br/>
- find / -type f -name *.conf ~/<br/>
- find /etc/ -name passwd<br/>
+  ```find / -type f -name *.conf -user root -seze +2-k -newermt 2020-03-03 -exec ls -al {} \; ```<br/>
+  ```find / -type f -name *.conf ~/ ```<br/>
+  ```find /etc/ -name passwd ```<br/>
 <b/>
 
- journalctl --list-boots | grep 03-21<br/>
- journalctl -b <hex code><br/>
+  ```journalctl --list-boots | grep 03-21 ```<br/>
+  ```journalctl -b <hex code> ```<br/>
 <b/>
 
- dig -x <ip address><br/>
- nslookup <host ip><br/>
+  ```dig -x <ip address> ```<br/>
+  ```nslookup <host ip> ```<br/>
 
 SERVERS <br/>
- node: npx http-server -p 8081<br/>
+  ```node: npx http-server -p 8081 ```<br/>
 
- apache 2: sudo service apache2 start<br/>
+  ```apache 2: sudo service apache2 start ```<br/>
 
- php: php -S 127.0.0.1:8001<br/>
+  ```php: php -S 127.0.0.1:8001 ```<br/>
 
- python: python -m http.server 8080<br/>
+  ```python: python -m http.server 8080 ```<br/>
