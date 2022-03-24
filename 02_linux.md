@@ -1,6 +1,6 @@
-```history``` or locate bash_history and go print it
-
-wget --spider --recursive https://www.google.com<br/>
+```history``` or ```locate bash_history``` and go print it
+```
+wget --spider --recursive https://www.google.com```<br/>
 curl https://www.google.com --insecure<b/>
 ls -l | grep --color -P "asd|"<b/>
 curl https://www.inlanefreight.com --insecure | cut -d"" -f2 | sort | cut"" -f2 | grep https://www.inlanefreight.com  uniq -c |wc<b/>
