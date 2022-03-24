@@ -8,15 +8,15 @@
   ```cat /etc/passwd | cut -d ":" -f5 (5th element divided from ":") ```<br/>
   ```cat /etc/passwd | tr ":" "" | awk '{print $1, $NF}' (print 1st and last devided from ":") ```<br/>
   ```cat /etc/passwd | tr ":" "" | awk '{print $1, $NF}' | sed 's/bin/HTB/g' (replace all bin with HTB) ```<br/>
- nmap -sV -A -F <ip> ``` <b/>
+  ```nmap -sV -A -F <ip> ``` <b/>
   ```systemctl list-units --type=service ```<br/>
   ```ping -c <integer> <domain || ip> ```<br/>
-<b/>
+<br/>
 
   ```find / -type f -name *.conf -user root -seze +2-k -newermt 2020-03-03 -exec ls -al {} \; ```<br/>
   ```find / -type f -name *.conf ~/ ```<br/>
   ```find /etc/ -name passwd ```<br/>
-<b/>
+<br/>
 
   ```journalctl --list-boots | grep 03-21 ```<br/>
   ```journalctl -b <hex code> ```<br/>
