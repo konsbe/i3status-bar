@@ -5,9 +5,9 @@
   ```ls -l | grep --color -P "asd|" ```<br/>
   ```curl https://www.inlanefreight.com --insecure | cut -d"" -f2 | sort | cut"" -f2 | grep https://www.inlanefreight.com  uniq -c |wc ```<br/>
   ```cat /etc/passwd | tr ":" "" | column -t ```<br/>
-  ```cat /etc/passwd | cut -d ":" -f5 (5th element divided from ":") ```<br/>
-  ```cat /etc/passwd | tr ":" "" | awk '{print $1, $NF}' (print 1st and last devided from ":") ```<br/>
-  ```cat /etc/passwd | tr ":" "" | awk '{print $1, $NF}' | sed 's/bin/HTB/g' (replace all bin with HTB) ```<br/>
+  ```cat /etc/passwd | cut -d ":" -f5 ```(5th element divided from ":")<br/>
+  ```cat /etc/passwd | tr ":" "" | awk '{print $1, $NF}' ```(print 1st and last devided from ":") <br/>
+  ```cat /etc/passwd | tr ":" "" | awk '{print $1, $NF}' | sed 's/bin/HTB/g' ```(replace all bin with HTB)<br/>
   ```nmap -sV -A -F <ip> ``` <b/>
   ```systemctl list-units --type=service ```<br/>
   ```ping -c <integer> <domain || ip> ```<br/>
