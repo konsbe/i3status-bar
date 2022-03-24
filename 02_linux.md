@@ -26,10 +26,10 @@
   ```nslookup <host ip> ```<br/>
 
 SERVERS <br/>
-  ```node: npx http-server -p 8081 ```<br/>
+  node: ```npx http-server -p 8081 ```<br/>
 
-  ```apache 2: sudo service apache2 start ```<br/>
+  apache 2: ```sudo service apache2 start ```<br/>
 
-  ```php: php -S 127.0.0.1:8001 ```<br/>
+  php: ```php -S 127.0.0.1:8001 ```<br/>
 
-  ```python: python -m http.server 8080 ```<br/>
+  python: ```python -m http.server 8080 ```<br/>
