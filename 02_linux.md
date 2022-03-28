@@ -1,4 +1,4 @@
-```history``` or ```locate bash_history``` and go print it
+```history``` or ```locate bash_history``` hitory or git history
 
  ```wget --spider --recursive https://www.google.com```<br/>
   ```curl https://www.google.com --insecure ```<br/>
@@ -33,3 +33,11 @@ SERVERS <br/>
   php: ```php -S 127.0.0.1:8001 ```<br/>
 
   python: ```python -m http.server 8080 ```<br/>
+
+WIFI <br/>
+ 
+ ```ip r```<br/>
+ ```nmcli con``` for your connections or ```nmcli dev wifi``` for avaliable connections
+
+
+
