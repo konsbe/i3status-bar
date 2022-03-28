@@ -35,7 +35,6 @@ SERVERS <br/>
   python: ```python -m http.server 8080 ```<br/>
 
 WIFI <br/>
- 
  ```ip r```<br/>
  ```nmcli con``` for your connections or ```nmcli dev wifi``` for avaliable connections
 
