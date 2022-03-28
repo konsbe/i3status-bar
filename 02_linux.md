@@ -7,7 +7,7 @@
   ```cat /etc/passwd | cut -d ":" -f5 ```(5th element divided from ":")<br/>
   ```cat /etc/passwd | tr ":" "" | awk '{print $1, $NF}' ```(print 1st and last devided from ":") <br/>
   ```cat /etc/passwd | tr ":" "" | awk '{print $1, $NF}' | sed 's/bin/HTB/g' ```(replace all bin with HTB)<br/>
-  ```nmap -sV -A -F <ip> ``` <b/>
+
   ```systemctl list-units --type=service ```<br/>
   ```ping -c <integer> <domain || ip> ```<br/>
 <br/>
@@ -36,8 +36,9 @@ SERVERS <br/>
 WIFI <br/>
  ```ip r```<br/>
  ```nmcli con``` for your connections or ```nmcli dev wifi``` for avaliable connections<br/>
+  ```ping -c <integer> <domain || ip> ```<br/>
   ```dig -x <ip address> ```<br/>
   ```nslookup <host ip> ```<br/>
-
-
-
+  ```nmap -sV -A -F <ip> ``` <br/>
+  ```nmap -Pn ```<br/>
+  ```nmap -Sp``` 
