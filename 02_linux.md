@@ -1,7 +1,3 @@
-HISTORY<br/>
-```history``` or ```locate bash_history``` hitory or git history
-  ```journalctl --list-boots | grep 03-21 ```<br/>
-  ```journalctl -b <hex code> ```<br/>
 
  ```wget --spider --recursive https://www.google.com```<br/>
   ```curl https://www.google.com --insecure ```<br/>
@@ -22,6 +18,11 @@ HISTORY<br/>
 <br/>
 
 <b/>
+HISTORY<br/>
+```history``` or ```locate bash_history``` hitory or git history
+  ```journalctl --list-boots | grep 03-21 ```<br/>
+  ```journalctl -b <hex code> ```<br/>
+
 
 
 SERVERS <br/>
