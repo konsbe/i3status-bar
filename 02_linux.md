@@ -2,7 +2,7 @@
 
  ```wget --spider --recursive https://www.google.com```<br/>
   ```curl https://www.google.com --insecure ```<br/>
-  ```ls -l | grep --color -P "asd|" ```<br/>
+  ```ls -l | grep --color -P "asd|" ``` colorize output without deleting other stuff<br/> 
   ```curl https://www.inlanefreight.com --insecure | cut -d"" -f2 | sort | cut"" -f2 | grep https://www.inlanefreight.com  uniq -c |wc ```<br/>
   ```cat /etc/passwd | tr ":" "" | column -t ```<br/>
   ```cat /etc/passwd | cut -d ":" -f5 ```(5th element divided from ":")<br/>
