@@ -40,5 +40,5 @@ WIFI <br/>
   ```dig -x <ip address> ```<br/>
   ```nslookup <host ip> ```<br/>
   ```nmap -sV -A -F <ip> ``` <br/>
-  ```nmap -Pn ``` or  ```nmap -Sp``` <br/>
+  ```nmap -Pn ```   or   ```nmap -Sp``` <br/>
  
