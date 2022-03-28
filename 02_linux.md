@@ -18,7 +18,8 @@
 <br/>
 
 HISTORY<br/>
-```history``` or ```locate bash_history``` hitory or git history
+  ```history``` and then ```!<number of command to execute>``` <br/> 
+  ```locate bash_history``` git history <br/>
   ```journalctl --list-boots | grep 03-21 ```<br/>
   ```journalctl -b <hex code> ```<br/>
 
