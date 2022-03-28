@@ -1,4 +1,7 @@
+HISTORY
 ```history``` or ```locate bash_history``` hitory or git history
+  ```journalctl --list-boots | grep 03-21 ```<br/>
+  ```journalctl -b <hex code> ```<br/>
 
  ```wget --spider --recursive https://www.google.com```<br/>
   ```curl https://www.google.com --insecure ```<br/>
@@ -18,12 +21,8 @@
   ```find /etc/ -name passwd ```<br/>
 <br/>
 
-  ```journalctl --list-boots | grep 03-21 ```<br/>
-  ```journalctl -b <hex code> ```<br/>
 <b/>
 
-  ```dig -x <ip address> ```<br/>
-  ```nslookup <host ip> ```<br/>
 
 SERVERS <br/>
   node: ```npx http-server -p 8081 ```<br/>
@@ -36,7 +35,9 @@ SERVERS <br/>
 
 WIFI <br/>
  ```ip r```<br/>
- ```nmcli con``` for your connections or ```nmcli dev wifi``` for avaliable connections
+ ```nmcli con``` for your connections or ```nmcli dev wifi``` for avaliable connections<br/>
+  ```dig -x <ip address> ```<br/>
+  ```nslookup <host ip> ```<br/>
 
 
 
