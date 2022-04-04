@@ -1,0 +1,94 @@
+```git status```
+
+
+bar+ +
+
+```git status```
+
+
+```git push --setupstream ```(from local to remote) 
+
+```git push```
+
+```git log --pretty=oneline -3```
+
+or
+-----------------------------------------------------------------------------------------------------
+```git commit -m "commit-naming" --no-verify```<br/>
+```git push```
+
+```git stash``` (rm changes)<br/>
+```git checkout -b``` .... or ```git checkout```... <br/>
+
+```git stash pop``` (to bring the changes back to where you are)<br/>
+
+```git rebase --interactive``` (if you mess up with names etc.. you can change it here!)<br/>
+
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+
+					::::::::pull changes from the target branch
+						--if conflicts you have to make rebase::::::::
+```git pull <"branch i want to pull changes">```<br/>
+
+					::::::::brings all changes from the target branch:::::::
+```git rebase <"branch i want to rebase into mine"> ```<br/>
+```git rebase interactive --id or branch name```<br/>
+
+							if you mess with old and new
+-----------------------------------------------------------------------------------------------------
+
+
+
+
+
+```git branch -b <"new branch name">``` || ```git checkout <"old-branch-name or main">```<br/>
+```git cherry-pick <"commit-id">``` (from the branch we make the commit)<br/>
+
+--> ```git fetch and the git switch <"branch name">```<br/>
+
+-----------------------------------------------------------------------------------------------------
+				TIME LINE - WORKING WITH OTHERS
+-----------------------------------------------------------------------------------------------------
+```git fetch``` "never heart someone"
+```git switch <"in the target branch">```
+```git pull```
+```git switch <"to your branch">```
+```git rebase <"your target branch">```
+```git push -f```
+
+-----------------------------------------------------------------------------------------------------
+
+					::::::::to much conflicts with ro reason?:::::::::
+git merge --abort
+git reset --hard "origin/target branch"
+
+			---------------------------------------------------
+					GIT-REBASE-INTERACTIVE
+			---------------------------------------------------
+git rebase --interactive => edit or squash => ^X -> Y
+					::::::::combine 3 to one commit:::::::::
+pick afed123  "commit name will stay"
+squash e973ff "commit name"
+squash a8112d "commit name"
+
+git continue --edit changes => ^X -> Y
+
+
+
+-----------------------------------------------------------------------------------------------------
+						GIT GRAPH
+-----------------------------------------------------------------------------------------------------
+
+git log --all --decorate --oneline --graph
+git log --all --decorate --graph   
+git log --all --graph --pretty="%C(bold green)%s"
+-----------------------------------------------------------------------------------------------------
+git fetch --prune /repository			::::::::all new updates::::::::
+git status                          you can see what you need to !pulL!
+git pull --ff                  
+
+git reflog for commit history
+
+
+git diff master                     shows the difference with the master
