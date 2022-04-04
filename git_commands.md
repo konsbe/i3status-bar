@@ -43,29 +43,31 @@ or
 -----------------------------------------------------------------------------------------------------
 				TIME LINE - WORKING WITH OTHERS
 -----------------------------------------------------------------------------------------------------
-```git fetch``` "never heart someone"
-```git switch <"in the target branch">```
-```git pull```
-```git switch <"to your branch">```
-```git rebase <"your target branch">```
-```git push -f```
+```git fetch``` "never heart someone"<br/>
+```git switch <"in the target branch">```<br/>
+```git pull```<br/>
+```git switch <"to your branch">```<br/>
+```git rebase <"your target branch">```<br/>
+```git push -f```<br/>
 
 -----------------------------------------------------------------------------------------------------
 
 					::::::::to much conflicts with ro reason?:::::::::
-git merge --abort
-git reset --hard "origin/target branch"
+```git merge --abort````<br/>
+```git reset --hard <"origin/target branch">```<br/>
 
-			---------------------------------------------------
-					GIT-REBASE-INTERACTIVE
-			---------------------------------------------------
-git rebase --interactive => edit or squash => ^X -> Y
-					::::::::combine 3 to one commit:::::::::
-pick afed123  "commit name will stay"
-squash e973ff "commit name"
-squash a8112d "commit name"
+					---------------------------------------------------
+							GIT-REBASE-INTERACTIVE
+					---------------------------------------------------
+```git rebase --interactive``` => edit or squash => ^X -> Y<br/>
 
-git continue --edit changes => ^X -> Y
+					::::::::combine 3 to one commit:::::::::<br/>
+
+```pick afed123  "commit name will stay"```<br/>
+```squash e973ff "commit name"```<br/>
+```squash a8112d "commit name"```<br/>
+
+```git continue --edit``` changes => ^X -> Y<br/>
 
 
 
