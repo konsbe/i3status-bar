@@ -1,16 +1,9 @@
-```git status```
-
-
-bar+ +
-
-```git status```
-
-
-```git push --setupstream ```(from local to remote) 
-
-```git push```
-
-```git log --pretty=oneline -3```
+```git status```<br/>
+bar+ +<br/>
+```git status```<br/>
+```git push --setupstream ```(from local to remote)<br/> 
+```git push```<br/>
+```git log --pretty=oneline -3```<br/>
 
 or
 -----------------------------------------------------------------------------------------------------
