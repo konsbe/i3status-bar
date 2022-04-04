@@ -75,15 +75,15 @@ or
 						GIT GRAPH
 -----------------------------------------------------------------------------------------------------
 
-git log --all --decorate --oneline --graph
-git log --all --decorate --graph   
-git log --all --graph --pretty="%C(bold green)%s"
+```git log --all --decorate --oneline --graph```<br/>
+```git log --all --decorate --graph```<br/>
+```git log --all --graph --pretty="%C(bold green)%s```<br/>
 -----------------------------------------------------------------------------------------------------
-git fetch --prune /repository			::::::::all new updates::::::::
-git status                          you can see what you need to !pulL!
-git pull --ff                  
+```git fetch --prune /repository```			::::::::all new updates::::::::<br/>
+```git status```                          you can see what you need to !pulL!<br/>
+```git pull --ff```<br/>
 
-git reflog for commit history
+```git reflog for commit history```<br/>
 
 
-git diff master                     shows the difference with the master
+```git diff master```                     shows the difference with the master
