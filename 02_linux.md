@@ -24,7 +24,6 @@ HISTORY<br/>
   ```journalctl -b <hex code> ```<br/>
 
 
-
 SERVERS<br/>
   node: ```npx http-server -p 8081 ```<br/>
 
@@ -33,6 +32,7 @@ SERVERS<br/>
   php: ```php -S 127.0.0.1:8001 ```<br/>
 
   python: ```python -m http.server 8080 ```<br/>
+
 
 WIFI<br/>
  ```ip r```<br/>
