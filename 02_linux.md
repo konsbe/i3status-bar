@@ -17,14 +17,15 @@
   ```find /etc/ -name passwd ```<br/>
 <br/>
 
-HISTORY<br/>
+
+## HISTORY<br/>
   ```history``` and then ```!<number of command to execute>``` <br/> 
   ```locate bash_history``` git history <br/>
   ```journalctl --list-boots | grep 03-21 ```<br/>
   ```journalctl -b <hex code> ```<br/>
 
 
-SERVERS<br/>
+## SERVERS<br/>
   node: ```npx http-server -p 8081 ```<br/>
 
   apache 2: ```sudo service apache2 start ```<br/>
@@ -34,7 +35,7 @@ SERVERS<br/>
   python: ```python -m http.server 8080 ```<br/>
 
 
-WIFI<br/>
+## WIFI<br/>
  ```ip r```<br/>
  ```nmcli con``` for your connections or ```nmcli dev wifi``` for avaliable connections<br/>
   ```ping -c <integer> <domain || ip> ```<br/>
