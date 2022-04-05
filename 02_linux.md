@@ -38,8 +38,14 @@ WIFI<br/>
  ```ip r```<br/>
  ```nmcli con``` for your connections or ```nmcli dev wifi``` for avaliable connections<br/>
   ```ping -c <integer> <domain || ip> ```<br/>
+  ```nslookup <ip-adress || url>```  or ```whois <ip address>```<br/>
+  ```curl -v <url page> --insecure``` ```-v```for the headers ```--insecure``` for the content <br/>
   ```dig -x <ip address> ```<br/>
-  ```nslookup <host ip> ```<br/>
   ```nmap -sV -A -F <ip> ``` <br/>
   ```nmap -Pn ```   or   ```nmap -Sp``` <br/>
+  ```wget --server-response --spider  https://developer.mozilla.org```
+  ```wget ‐‐span-hosts ‐‐level=inf ‐‐recursive https://developer.mozilla.org``` download the page as an index.html
+  
+
+  
  
