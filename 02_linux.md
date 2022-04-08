@@ -8,6 +8,7 @@
   ```cat /etc/passwd | tr ":" "" | awk '{print $1, $NF}' ```(print 1st and last devided from ":") <br/>
   ```cat /etc/passwd | tr ":" "" | awk '{print $1, $NF}' | sed 's/bin/HTB/g' ```(replace all bin with HTB)<br/>
 
+ ```systemctl status <NetwrokManager || your process you like> ```<br/>
   ```systemctl list-units --type=service ```<br/>
   ```ping -c <integer> <domain || ip> ```<br/>
 <br/>
@@ -44,10 +45,9 @@
   ```dig -x <ip address> ```<br/>
   ```nmap -sV -A -F <ip> ``` <br/>
   ```nmap -Pn ```   or   ```nmap -Sp``` <br/>
-  ```wget --server-response --spider  https://developer.mozilla.org```<br/>
-  ```wget ‐‐span-hosts ‐‐level=inf ‐‐recursive https://developer.mozilla.org``` download the page as an index.html<br/>
-  ```htop``` an interactive real-time process monitoring application 
-  
+  ```wget --server-response --spider  https://developer.mozilla.org```
+  ```wget ‐‐span-hosts ‐‐level=inf ‐‐recursive https://developer.mozilla.org``` download the page as an index.html
+
 
   
  
