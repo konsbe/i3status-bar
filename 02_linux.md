@@ -9,6 +9,7 @@
   ```cat /etc/passwd | tr ":" "" | awk '{print $1, $NF}' | sed 's/bin/HTB/g' ```(replace all bin with HTB)<br/>
 
  ```systemctl status <NetwrokManager || your process you like> ```<br/>
+ ```make unload``` || ```make load ```<br/>
   ```systemctl list-units --type=service ```<br/>
   ```ping -c <integer> <domain || ip> ```<br/>
 <br/>
