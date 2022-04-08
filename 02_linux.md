@@ -44,8 +44,9 @@
   ```dig -x <ip address> ```<br/>
   ```nmap -sV -A -F <ip> ``` <br/>
   ```nmap -Pn ```   or   ```nmap -Sp``` <br/>
-  ```wget --server-response --spider  https://developer.mozilla.org```
-  ```wget ‐‐span-hosts ‐‐level=inf ‐‐recursive https://developer.mozilla.org``` download the page as an index.html
+  ```wget --server-response --spider  https://developer.mozilla.org```<br/>
+  ```wget ‐‐span-hosts ‐‐level=inf ‐‐recursive https://developer.mozilla.org``` download the page as an index.html<br/>
+  ```htop``` an interactive real-time process monitoring application 
   
 
   
