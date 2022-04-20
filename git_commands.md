@@ -7,8 +7,8 @@ bar+ +<br/>
 
 or
 -----------------------------------------------------------------------------------------------------
-```git commit -m "commit-naming" --no-verify```<br/>
-```git push```
+```git commit -m <commit-naming> --no-verify``` || ```git commit --amend --no-edit```<br/> 
+```git push``` || ```git push -f origin <branch-name>```
 
 ```git stash``` (rm changes)<br/>
 ```git checkout -b``` .... or ```git checkout```... <br/>
