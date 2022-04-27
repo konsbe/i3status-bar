@@ -11,4 +11,5 @@ switch to i3 mode and go install
 ##### $ sudo apt update && sudo apt install compton <br/> => copy the compton.config file and paste it in .config directory
 <br/>installing zsh terminal
 ##### $ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"  
-##### $ ```exec bash``` || ```exec zsh```
+##### $ ```exec bash``` || ```exec zsh```<br/>
+bash scripting cheatsheet: https://devhints.io/bash
