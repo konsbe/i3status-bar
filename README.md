@@ -15,5 +15,5 @@ switch to i3 mode and go install
 ##### $ vim .zshrc and add to plugins=(git node jsontools copybuffer web-search nvm zsh-nvm)
 ##### $ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 ##### $ echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
-
+##### $ source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 bash scripting cheatsheet: https://devhints.io/bash
