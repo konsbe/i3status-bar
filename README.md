@@ -12,4 +12,8 @@ switch to i3 mode and go install
 <br/>installing zsh terminal (more infos: https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
 ##### $ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"  
 ##### $ ```exec bash``` || ```exec zsh```<br/>
+##### $ vim .zshrc and add to plugins=(git node jsontools copybuffer web-search nvm zsh-nvm)
+##### $ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+##### $ echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+
 bash scripting cheatsheet: https://devhints.io/bash
