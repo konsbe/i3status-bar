@@ -1,5 +1,6 @@
 
  ```wget --spider --recursive https://www.google.com```<br/>
+ ``` curl -i -ik <http://www.example.com>```<br/>
   ```curl https://www.google.com --insecure ```<br/>
   ```ls -l | grep --color -P "asd|" ``` colorize output without deleting other stuff<br/> 
   ```curl https://www.inlanefreight.com --insecure | cut -d"" -f2 | sort | cut"" -f2 | grep https://www.inlanefreight.com  uniq -c |wc ```<br/>
