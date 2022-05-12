@@ -37,6 +37,7 @@ or
 
 ```git branch -b <"new branch name">``` || ```git checkout <"old-branch-name or main">```<br/>
 ```git cherry-pick <"commit-id">``` (from the branch we make the commit)<br/>
+```git cherry-pick -n <"commit-id">``` (if you dont wish to commit changes to your new branch)<br/>
 
 --> ```git fetch and the git switch <"branch name">```<br/>
 
