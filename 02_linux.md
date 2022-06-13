@@ -14,6 +14,10 @@
  ```make unload``` || ```make load ```<br/>
   ```systemctl list-units --type=service ```<br/>
   ```ping -c <integer> <domain || ip> ```<br/>
+  
+  ```netstat -tulpn  ``` checking ip addresses<br/>
+ ```traceroute google.com ``` check traffic<br/>
+  
 <br/>
 
   ```find / -type f -name *.conf -user root -seze +2-k -newermt 2020-03-03 -exec ls -al {} \; ```<br/>
