@@ -44,6 +44,7 @@
 
 
 ## WIFI<br/>
+```hostname -I | awk '{print $1}'``` to get your current IP<br> 
  ```ip r```<br/>
  ```nmcli con``` for your connections or ```nmcli dev wifi``` for avaliable connections<br/>
   ```ping -c <integer> <domain || ip> ```<br/>
