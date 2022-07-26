@@ -88,3 +88,16 @@ or
 
 
 ```git diff master```                     shows the difference with the master
+
+
+-----------------------------------------------------------------------------------------------------
+						GIT NEW REPO
+-----------------------------------------------------------------------------------------------------
+
+
+```git init```<br/>
+```git add README.md```<br/>
+```git commit -m "first commit"```<br/>
+```git branch -M main```<br/>
+```git remote add origin git@github.com:konsbe/d3-graphs.git```<br/>
+```git push -u origin main```<br/>
