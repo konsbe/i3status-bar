@@ -177,6 +177,25 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+
+
+#Display settings
+set $bg-color            #2f343f
+set $inactive-bg-color   #2f343f
+set $text-color          #f3f4f5
+set $inactive-text-color #676E7D
+set $urgent-bg-color     #E53935
+
+# window colors
+#                       border              background         text                 indicator
+client.focused          $bg-color           $bg-color          $text-color          #00ff00
+client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
+client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
+client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #00ff00
+
+
+
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
@@ -220,11 +239,39 @@ bindsym $mod+x mode "exit: [l]ogout, [r]eboot, [s]hutdown"
 
 
 
-bindsym $mod+i exec gnome-control-center
-bindsym $mod+shift+x exec i3lock
 
 exec_always feh --bg-fill /home/konsbe/Pictures/21549.webp
+
+##custom
+bindsym $mod+Shift+x exec i3lock
+bindsym $mod+i exec gnome-control-center
+bindsym $mod+c exec gnome-calendar
+
+#exec_ always --bg-scale  /home/kobermemore/Downloads/1198688.jpg
 exec_always compton
-for_window[class="Gnome-control-center"] floating enable
-for_window [class= "Gnome-control-center"] resize set 400 400 
-exec_always --no-strup-id compton -CGb
+exec_always --no-strup-id compton -CGbxec_always compton
+
+for_window [class="Gnome-control-center"] floating enable
+for_window [class= "Gnome-control-center"] resize set 900 600 
+for_window [class="Gnome-calendar"] floating enable
+for_window [class= "Gnome-calendar"] resize set 900 600 
+
+exec_always feh --bg-fill /home/kobermemore/Downloads/1198688.jpg
+exec_always xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1 --off --output DP-1 --off --output DP-2 --off --output HDMI-1-2 --off
+
+
+# Sreen brightness controls
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+
+# Touchpad controls
+bindsym XF86TouchpadToggle exec /home/kobermemore/.config/i3/toggletouchpad.sh # toggle touchpad
+
+# Media player controls
+bindsym XF86AudioPlay exec playerctl play
+bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+
+
+
