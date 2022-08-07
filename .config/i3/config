@@ -275,3 +275,7 @@ bindsym XF86AudioPrev exec playerctl previous
 
 
 
+# start dmenu (a program launcher)
+bindsym $mod+q exec --no-startup-id rofi -show run -lines 3 opacity "5" -bw 0 -bc "$bg-color" -bg "$bg-color" -hlbg "$bg-color" -hlfg "#9575cd"
+#bindsym $mod+q exec "rofi -modi window,drun,run -show drun -sidebar-mode -terminal termite -color-window '#000000, #000000, #000000' -color-normal '#000000, #b3e774, #000000, #b3e774, #000000' -color-active '#000000, #b3e774, #000000, #b3e774, #000000' -color-urgent '#000000, #b3e774, #000000, #b3e774, #000000'"
+
