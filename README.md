@@ -13,6 +13,11 @@ switch to i3 mode and go install
 ```sudo apt-get install arandr```<br/>
 ```xprop``` wm_class(string)= _, x<br/>
 
+   62  unzip Downloads/fontawesome-free-6.1.2-web.zip 
+mkdir ~/.fonts
+```cp fontawesome-free-6.1.2-web/webfonts/fa-brands-400.ttf fontawesome-free-6.1.2-web/webfonts/fa-regular-400.ttf fontawesome-free-6.1.2-web/webfonts/fa-solid-900.ttf fontawesome-free-6.1.2-web/webfonts/fa-v4compatibility.ttf ~/.fonts```
+
+
 ##### $ sudo apt-get install -y i3blocks
 ##### $ git clone git@github.com:FortAwesome/Font-Awesome.git [git](https://github.com/FortAwesome/Font-Awesome) or Download the zip file and go unzip it! [cheatSheet](https://fontawesome.com/v4/cheatsheet/)
 ##### $ cp FontAwesome/webfonts ~/.config/i3/  (we need to copy the directory with .ttf files in to our i3 file)
