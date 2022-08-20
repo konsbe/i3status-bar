@@ -256,6 +256,7 @@ for_window [class= "Gnome-control-center"] resize set 900 600
 for_window [class="Gnome-calendar"] floating enable
 for_window [class= "Gnome-calendar"] resize set 900 600 
 
+#Wallpaper https://unsplash.com/photos/WdwPadrGKto
 exec_always feh --bg-fill /home/kober/Downloads/soheb-zaidi-WdwPadrGKto-unsplash.jpg
 #exec_always xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1 --off --output DP-1 --off --output DP-2 --off --output HDMI-1-2 --off
 
@@ -284,13 +285,13 @@ bindsym $mod+x mode "exit: [l]ogout, [r]eboot, [s]hutdown"
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
-
-
+ 
 # Media player controls
-bindsym XF86AudioPlay exec playerctl play
-bindsym XF86AudioPause exec playerctl pause
-bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPrev exec playerctl previous
+# Download https://github.com/altdesktop/playerctl @lts and dpkg -i
+#bindsym XF86AudioPlay exec playerctl play
+#bindsym XF86AudioPause exec playerctl pause
+#bindsym XF86AudioNext exec playerctl next
+#bindsym XF86AudioPrev exec playerctl previous
 
 
 
