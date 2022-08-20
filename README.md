@@ -47,7 +47,7 @@ or```sudo sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tool
 bash scripting cheatsheet: https://devhints.io/bash<br/>
 
 
-nvm node
+### nvm node
 
 ```curl -sL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh -o install_nvm.sh``` update v0.39.1 with @lts version<br/> 
 ```bash install_nvm.sh```<br/>
@@ -57,4 +57,14 @@ nvm node
 ```command -v nvm```<br/>
 ```nvm install --lts```<br/>
 ```nvm install node```<br/>
+
+
+### gitui rust
+
+```cargo install gitui.``` [gitui you can install rust in your computer or go with brew](https://github.com/extrawurst/gitui)<br/> 
+
+### thefuck
+
+[install thefuck: github page](https://github.com/nvbn/thefuck)
+
 
