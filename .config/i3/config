@@ -19,6 +19,10 @@ font pango:monospace 8
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
 
+# Start XDG autostart .desktop files using dex. See also
+# https://wiki.archlinux.org/index.php/XDG_Autostart
+exec --no-startup-id dex --autostart --environment i3
+
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
@@ -47,11 +51,15 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+q exec dmenu_run -nb black -sb tomato
-# There also is the (new) i3-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
-# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+#bindsym $mod+q exec --no-startup-id rofi -show run -lines 3 opacity "5" -bw 0 -bc "$bg-color" -bg "$bg-color" -hlbg "$bg-color" -hlfg "#9575cd" 
+bindsym $mod+q exec --no-startup-id "rofi -modi window,drun,run -show drun -sidebar-mode -terminal termite" 
+#bindsym $mod+q exec "rofi -modi window,drun,run -show drun -sidebar-mode -terminal termite -color-window '#000000, #000000, #000000' -color-normal '#000000, #b3e774, #000000, #b3e774, #000000' -color-active '#000000, #b3e774, #000000, #b3e774, #000000' -color-urgent '#000000, #b3e774, #000000, #b3e774, #000000'"
+
+# A more modern dmenu replacement is rofi:
+# bindcode $mod+40 exec "rofi -modi drun,run -show drun"
+# There also is i3-dmenu-desktop which only displays applications shipping a
+# .desktop file. It is a wrapper around dmenu, so you need that installed.
+# bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
 # change focus
 bindsym $mod+j focus left
@@ -106,9 +114,9 @@ bindsym $mod+a focus parent
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1: Terminal  "
-set $ws2 "2: Firefox  "
-set $ws3 "3: Email  "
-set $ws4 "4: IDE "
+set $ws2 "2: IDE "
+set $ws3 "3:      "
+set $ws4 "4: Email  "
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
@@ -128,9 +136,6 @@ bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
 
-
-
-
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
 bindsym $mod+Shift+2 move container to workspace number $ws2
@@ -142,6 +147,17 @@ bindsym $mod+Shift+7 move container to workspace number $ws7
 bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
+
+
+# screen Displays
+bindsym $mod+Control+3 move workspace to output HDMI-2
+bindsym $mod+Control+2 move workspace to output HDMI-1-2
+bindsym $mod+Control+1 move workspace to output HDMI-1
+bindsym $mod+Control+l move workspace to output left
+bindsym $mod+Control+r move workspace to output right
+bindsym $mod+Control+u move workspace to output up
+bindsym $mod+Control+d move workspace to output down
+
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -177,10 +193,8 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-
-
 #Display settings
-set $bg-color            #2f343f
+set $bg-color 	         #2f343f
 set $inactive-bg-color   #2f343f
 set $text-color          #f3f4f5
 set $inactive-text-color #676E7D
@@ -189,25 +203,28 @@ set $urgent-bg-color     #E53935
 # window colors
 #                       border              background         text                 indicator
 client.focused          $bg-color           $bg-color          $text-color          #00ff00
-client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
-client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
+client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-color #00ff00
+client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-color #00ff00
 client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #00ff00
-
 
 
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+	tray_output primary
+	output HDMI-1
+	output primary
+        status_command i3status
 	font pango:DejaVu Sans Mono, FontAwesome 7.5
-	status_command i3blocks -c ~/.config/i3/i3blocks.conf
+	status_command i3blocks -c ~/.config/i3/i3blocks.conf 
+	
 	i3bar_command i3bar --transparency
 	workspace_buttons yes
 	position top
-	i3bar_command i3bar -t
-	tray_output none
 	colors{
-		background #00000000
+
+		background #00000000 
 		statusline #4c7899
 		separator #4c7899
 
@@ -218,16 +235,41 @@ bar {
 		binding_mode #00000000 #00000000 #900000 
 			
 	}
-	
+
 }
 
+##custom
+bindsym $mod+Shift+x exec i3lock
+bindsym $mod+i exec gnome-control-center
+bindsym $mod+c exec gnome-calendar
+
+bindsym $mod+Tab exec rofi -show windowcd
+bindsym $mod+b exec rofi -show filebrowser
+bindsym --release Caps_Lock exec pkill -SIGRTMIN+10 i3blocks
+
+#exec_ always --bg-scale  /home/kobermemore/Downloads/1198688.jpg
+exec_always --no-strup-id compton -CGb
+exec_always compton
+
+for_window [class="Gnome-control-center"] floating enable
+for_window [class= "Gnome-control-center"] resize set 900 600 
+for_window [class="Gnome-calendar"] floating enable
+for_window [class= "Gnome-calendar"] resize set 900 600 
+
+exec_always feh --bg-fill /home/kober/Downloads/soheb-zaidi-WdwPadrGKto-unsplash.jpg
+#exec_always xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1 --off --output DP-1 --off --output DP-2 --off --output HDMI-1-2 --off
+
+exec_always xinput set-prop "ELAN1205:00 04F3:30E9 Touchpad" "libinput Tapping Enabled" 1
+
+
+#exit optons
 mode "exit: [l]ogout, [r]eboot, [s]hutdown" {
 
   bindsym l exec i3-msg exit
 
   bindsym r exec systemctl reboot
 
-  bindsym s exec systemctl shutdown
+  bindsym s exec systemctl shutdown #systemctl poweroff
 
   bindsym Escape mode "default"
 
@@ -239,33 +281,10 @@ bindsym $mod+x mode "exit: [l]ogout, [r]eboot, [s]hutdown"
 
 
 
-
-exec_always feh --bg-fill /home/konsbe/Pictures/21549.webp
-
-##custom
-bindsym $mod+Shift+x exec i3lock
-bindsym $mod+i exec gnome-control-center
-bindsym $mod+c exec gnome-calendar
-
-#exec_ always --bg-scale  /home/kobermemore/Downloads/1198688.jpg
-exec_always compton
-exec_always --no-strup-id compton -CGbxec_always compton
-
-for_window [class="Gnome-control-center"] floating enable
-for_window [class= "Gnome-control-center"] resize set 900 600 
-for_window [class="Gnome-calendar"] floating enable
-for_window [class= "Gnome-calendar"] resize set 900 600 
-
-exec_always feh --bg-fill /home/kobermemore/Downloads/1198688.jpg
-exec_always xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1 --off --output DP-1 --off --output DP-2 --off --output HDMI-1-2 --off
-
-
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
-# Touchpad controls
-bindsym XF86TouchpadToggle exec /home/kobermemore/.config/i3/toggletouchpad.sh # toggle touchpad
 
 # Media player controls
 bindsym XF86AudioPlay exec playerctl play
@@ -274,8 +293,4 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 
-
-# start dmenu (a program launcher)
-bindsym $mod+q exec --no-startup-id rofi -show run -lines 3 opacity "5" -bw 0 -bc "$bg-color" -bg "$bg-color" -hlbg "$bg-color" -hlfg "#9575cd"
-#bindsym $mod+q exec "rofi -modi window,drun,run -show drun -sidebar-mode -terminal termite -color-window '#000000, #000000, #000000' -color-normal '#000000, #b3e774, #000000, #b3e774, #000000' -color-active '#000000, #b3e774, #000000, #b3e774, #000000' -color-urgent '#000000, #b3e774, #000000, #b3e774, #000000'"
 
