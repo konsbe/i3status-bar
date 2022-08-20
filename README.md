@@ -17,7 +17,7 @@ switch to i3 mode and go install
 ```git clone git@github.com:FortAwesome/Font-Awesome.git``` [github page at realeases](https://github.com/FortAwesome/Font-Awesome) && [cheatSheet](https://fontawesome.com/v4/cheatsheet/)<br/>
 ```unzip Downloads/fontawesome-free-6.1.2-web.zip``` <br/>
 ```mkdir ~/.fonts```<br/>
-```cp fontawesome-free-6.1.2-web/webfonts/fa-brands-400.ttf fontawesome-free-6.1.2-web/webfonts/fa-regular-400.ttf fontawesome-free-6.1.2-web/webfonts/fa-solid-900.ttf fontawesome-free-6.1.2-web/webfonts/fa-v4compatibility.ttf ~/.fonts```<br/>
+```cp fontawesome-free-6.1.2-web/webfonts/fa-brands-400.ttf fontawesome-free-6.1.2-web/webfonts/fa-regular-400.ttf fontawesome-free-6.1.2-web/webfonts/fa-solid-900.ttf fontawesome-free-6.1.2-web/webfonts/fa-v4compatibility.ttf ~/.fonts``` .ttf files (and otfs if any error exist)<br/>
 
 ```sudo apt-get install thunar```<br/>
 ```sudo apt update && sudo apt install compton```<br/>
