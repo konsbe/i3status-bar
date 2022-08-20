@@ -7,7 +7,7 @@ for everyone that loves a better view of linux experience. my docs for status ba
 switch to i3 mode and go install
 
 ```sudo apt install vim``` <br/>
-```sudo update--alternatives --config --editor``` and set vim as editor<br/>
+```sudo update-alternatives --config editor``` and set vim as editor<br/>
 
 ```sudo apt-get install feh```<br/>
 ```sudo apt-get install arandr```<br/>
