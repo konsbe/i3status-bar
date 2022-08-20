@@ -32,6 +32,7 @@ Other installations
 
 -----------------------------------------------------------------------
 
+Oh my zsh
 
 ``` sudo apt-get install zsh ```<br/>
 ``` wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh ```<br/>
@@ -44,3 +45,16 @@ or```sudo sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tool
 ```echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc```<br/>
 ```source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh```<br/>
 bash scripting cheatsheet: https://devhints.io/bash<br/>
+
+
+nvm node
+
+```curl -sL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh -o install_nvm.sh```<br/>
+```bash install_nvm.sh```<br/>
+```zsh install_nvm.sh```<br/>
+```export NVM_DIR="$HOME/.nvm"\n  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm\n  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion```<br/>
+```source ~/.profile``` this is the ~/.bash_profile directory<br/>
+```command -v nvm```<br/>
+```nvm install --lts```<br/>
+```nvm install node```<br/>
+
