@@ -64,8 +64,13 @@ bash scripting cheatsheet: https://devhints.io/bash<br/>
 ```cargo install gitui``` [gitui you can install rust in your computer or go with brew](https://github.com/extrawurst/gitui)<br/> 
 
 ### thefuck
-
 [official: github page](https://github.com/nvbn/thefuck)
+
+```sudo apt update```<br/>
+```sudo apt install python3-dev python3-pip python3-setuptools```<br/>
+```pip3 install thefuck --user```<br/>
+```pip install thefuck```<br/>
+
 
 ### keepassxc
 
