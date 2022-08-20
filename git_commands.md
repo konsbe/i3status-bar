@@ -1,21 +1,20 @@
-```git status```<br/>
-bar+ +<br/>
-```git status```<br/>
+
+```git status``` current status<br/>
+```git add .``` add all changes<br/> 
+```git commit -m <commit-naming> --no-verify``` || ```git commit --amend --no-edit```<br/> 
 ```git push --setupstream ```(from local to remote)<br/> 
-```git push```<br/>
+```git push``` || ```git push -f origin <branch-name> ```_ || if you edit git history with amend<br/>
 ```git log --pretty=oneline -3```<br/>
 
 or
 -----------------------------------------------------------------------------------------------------
-```git commit -m <commit-naming> --no-verify``` || ```git commit --amend --no-edit```<br/> 
-```git push``` || ```git push -f origin <branch-name>```
 
 ```git stash``` (rm changes)<br/>
-```git checkout -b``` .... or ```git checkout```... <br/>
-
 ```git stash pop``` (to bring the changes back to where you are)<br/>
 
-```git rebase --interactive``` (if you mess up with names etc.. you can change it here!)<br/>
+```git checkout -b <branch-name>``` or ```git checkout <branch-name>```make or change branch <br/>
+
+```git rebase --interactive <id or branch-name>``` (if you mess up with names etc.. you can change it here!)<br/>
 
 -----------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------
@@ -26,7 +25,7 @@ or
 
 					::::::::brings all changes from the target branch:::::::
 ```git rebase <"branch i want to rebase into mine"> ```<br/>
-```git rebase interactive --id or branch name```<br/>
+
 
 							if you mess with old and new
 -----------------------------------------------------------------------------------------------------
