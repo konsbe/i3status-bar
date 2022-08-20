@@ -1,3 +1,16 @@
+### Configure git with your PC<br/>
+-----------------------------------------------------------------------------------------------------
+
+```ssh-keygen -t rsa -b 4096 -C "<your email inside quotes"```<br/> 
+```cat .ssh/id_rsa.pub ```<br/> 
+```git config --global user.name <your-git-name>```<br/> 
+```git config --global user.email <your-git-email>```<br/> 
+```git config --get user.name```<br/> 
+```git config --get user.email```<br/> 
+
+
+### GIT-CHEATSHEET<br/>
+-----------------------------------------------------------------------------------------------------
 
 ```git status``` current status<br/>
 ```git add .``` add all changes<br/> 
@@ -5,9 +18,6 @@
 ```git push --setupstream ```(from local to remote)<br/> 
 ```git push``` || ```git push -f origin <branch-name> ```_ || if you edit git history with amend<br/>
 ```git log --pretty=oneline -3```<br/>
-
-or
------------------------------------------------------------------------------------------------------
 
 ```git stash``` (rm changes)<br/>
 ```git stash pop``` (to bring the changes back to where you are)<br/>
