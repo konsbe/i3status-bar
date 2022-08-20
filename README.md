@@ -32,7 +32,8 @@ Other installations
 
 -----------------------------------------------------------------------
 
-Oh my zsh
+### Oh my zsh <br/>
+ [oh-my-zsh official github page](https://github.com/ohmyzsh/ohmyzsh)
 
 ``` sudo apt-get install zsh ```<br/>
 ``` wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh ```<br/>
@@ -60,14 +61,14 @@ bash scripting cheatsheet: https://devhints.io/bash<br/>
 
 
 ### gitui rust
+ [gitui official github page](https://github.com/extrawurst/gitui)<br/> 
 
 ```curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh```<br/>
 ```source $HOME/.cargo/env```<br/>
 ```rustc --version```<br/>
 ```rusttup update```<br/>
 ```sudo apt install cargo```<br/>
-```cargo install gitui``` [gitui official github page](https://github.com/extrawurst/gitui)<br/> 
-
+```cargo install gitui```
 ### thefuck
 [official: github page](https://github.com/nvbn/thefuck)
 
