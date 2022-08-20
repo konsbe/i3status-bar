@@ -65,7 +65,7 @@ bash scripting cheatsheet: https://devhints.io/bash<br/>
 
 ### thefuck
 
-[install thefuck: github page](https://github.com/nvbn/thefuck)
+[official: github page](https://github.com/nvbn/thefuck)
 
 ### keepassxc
 
