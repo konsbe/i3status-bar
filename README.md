@@ -22,9 +22,9 @@ switch to i3 mode and go install
 ```sudo apt-get install thunar```<br/>
 ```sudo apt update && sudo apt install compton```<br/>
 ```sudo apt-get install rofi``` and hit ```rofi-theme-selector```<br/> 
-```sudo apt-get install -y i3blocks```<br/>
+```sudo apt-get install -y i3blocks``` => ```cp /etc/i3blocks.conf ~/.config/i3/i3blocks.conf```<br/>
 
-```vim .config/i3/config```<br/>
+```vim .config/i3/config```, ```vim .config/i3/i3blocks.conf```  <br/>
 
 
 <br/>
