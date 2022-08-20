@@ -67,4 +67,6 @@ bash scripting cheatsheet: https://devhints.io/bash<br/>
 
 [install thefuck: github page](https://github.com/nvbn/thefuck)
 
+### keepassxc
 
+ ```sudo apt install keepassxc``` [official page](https://keepassxc.org/download/#linux)
