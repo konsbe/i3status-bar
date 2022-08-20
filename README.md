@@ -20,14 +20,14 @@ switch to i3 mode and go install
 ```cp fontawesome-free-6.1.2-web/webfonts/fa-brands-400.ttf fontawesome-free-6.1.2-web/webfonts/fa-regular-400.ttf fontawesome-free-6.1.2-web/webfonts/fa-solid-900.ttf fontawesome-free-6.1.2-web/webfonts/fa-v4compatibility.ttf ~/.fonts```<br/>
 
 ```sudo apt-get install thunar```<br/>
-```sudo apt-get install rofi```<br/>
+```sudo apt update && sudo apt install compton```<br/>
+```sudo apt-get install rofi``` and hit ```rofi-theme-selector```<br/> 
+```sudo apt-get install -y i3blocks```<br/>
+
 ```vim .config/i3/config```<br/>
 
 
-##### $ sudo apt-get install -y i3blocks
-##### $ sudo apt update && sudo apt install compton <br/> => copy the compton.config file and paste it in .config directory
 <br/>
-##### $ sudo apt-get update && sudo apt-get install rofi <br/> => install rofi and mkdir and config files inside the .config<br/>
 installing zsh terminal (more infos: https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
 ##### $ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"  
 ##### $ ```exec bash``` || ```exec zsh```<br/>
