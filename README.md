@@ -61,7 +61,7 @@ bash scripting cheatsheet: https://devhints.io/bash<br/>
 
 ### gitui rust
 
-```cargo install gitui.``` [gitui you can install rust in your computer or go with brew](https://github.com/extrawurst/gitui)<br/> 
+```cargo install gitui``` [gitui you can install rust in your computer or go with brew](https://github.com/extrawurst/gitui)<br/> 
 
 ### thefuck
 
