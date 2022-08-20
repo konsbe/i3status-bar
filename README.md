@@ -49,7 +49,7 @@ bash scripting cheatsheet: https://devhints.io/bash<br/>
 
 nvm node
 
-```curl -sL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh -o install_nvm.sh```<br/>
+```curl -sL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh -o install_nvm.sh``` update v0.39.1 with @lts version<br/> 
 ```bash install_nvm.sh```<br/>
 ```zsh install_nvm.sh```<br/>
 ```export NVM_DIR="$HOME/.nvm"\n  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm\n  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion```<br/>
