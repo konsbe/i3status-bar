@@ -79,5 +79,18 @@ bash scripting cheatsheet: https://devhints.io/bash<br/>
 
 
 ### keepassxc
+[official page](https://keepassxc.org/download/#linux)
 
- ```sudo apt install keepassxc``` [official page](https://keepassxc.org/download/#linux)
+```sudo apt install keepassxc``` 
+
+### Screen Brightness
+
+```sudo add-apt-repository ppa:apandada1/brightness-controller```<br/>
+```sudo apt update```<br/>
+```sudo apt install brightness-controller```<br/>
+
+#### Keyboard brightness
+
+```sudo /etc/acpi/asus-keyboard-backlight.sh down```
+```sudo  /etc/acpi/asus-keyboard-backlight.sh up```
+
