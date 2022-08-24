@@ -1,8 +1,8 @@
 # [i3status-bar](https://github.com/vivien/i3blocks)
-for everyone that loves a better view of linux experience. my docs for status bar in i3 and also some infos how to get started to customize and a cheatsheet for terminal commands,   &lt;3 have fun! works on Kali  &amp; Ubuntu 20.04 
+for everyone that loves a better view of linux experience. my docs for status bar in i3 and also some infos how to get started to customize and a cheatsheet for terminal commands,   &lt;3 have fun! works on Kali  &amp; Ubuntu 20.04
 
 ##### $ sudo apt update
-##### $ sudo apt-get install i3     
+##### $ sudo apt-get install i3
 
 switch to i3 mode and go install
 
@@ -18,10 +18,11 @@ switch to i3 mode and go install
 ```unzip Downloads/fontawesome-free-6.1.2-web.zip``` <br/>
 ```mkdir ~/.fonts```<br/>
 ```cp fontawesome-free-6.1.2-web/webfonts/fa-brands-400.ttf fontawesome-free-6.1.2-web/webfonts/fa-regular-400.ttf fontawesome-free-6.1.2-web/webfonts/fa-solid-900.ttf fontawesome-free-6.1.2-web/webfonts/fa-v4compatibility.ttf ~/.fonts``` .ttf files (and otfs if any error exist)<br/>
-
+```git apt-get update -y```<br/>
+```git apt-get install -y gnome-screenshot```<br/>
 ```sudo apt-get install thunar```<br/>
 ```sudo apt update && sudo apt install compton```<br/>
-```sudo apt-get install rofi``` and hit ```rofi-theme-selector```<br/> 
+```sudo apt-get install rofi``` and hit ```rofi-theme-selector```<br/>
 ```sudo apt-get install -y i3blocks``` => ```cp /etc/i3blocks.conf ~/.config/i3/i3blocks.conf```<br/>
 
 ```vim .config/i3/config```, ```vim .config/i3/i3blocks.conf```  <br/>
@@ -50,7 +51,7 @@ bash scripting cheatsheet: https://devhints.io/bash<br/>
 
 ### nvm node
 
-```curl -sL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh -o install_nvm.sh``` update v0.39.1 with @lts version<br/> 
+```curl -sL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh -o install_nvm.sh``` update v0.39.1 with @lts version<br/>
 ```bash install_nvm.sh```<br/>
 ```zsh install_nvm.sh```<br/>
 ```export NVM_DIR="$HOME/.nvm"\n  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm\n  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion```<br/>
@@ -61,7 +62,7 @@ bash scripting cheatsheet: https://devhints.io/bash<br/>
 
 
 ### gitui rust
- [gitui official github page](https://github.com/extrawurst/gitui)<br/> 
+ [gitui official github page](https://github.com/extrawurst/gitui)<br/>
 
 ```curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh```<br/>
 ```source $HOME/.cargo/env```<br/>
@@ -81,7 +82,7 @@ bash scripting cheatsheet: https://devhints.io/bash<br/>
 ### keepassxc
 [official page](https://keepassxc.org/download/#linux)
 
-```sudo apt install keepassxc``` 
+```sudo apt install keepassxc```
 
 ### Screen Brightness
 
