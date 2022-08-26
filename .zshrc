@@ -12,7 +12,17 @@ export ZSH="$HOME/.oh-my-zsh"
 #ZSH_THEME="robbyrussell"
 #ZSH_THEME="agnoster"
 ZSH_THEME="random"
-
+#ZSH_THEME_RANDOM_CANDIDATES=(
+	#"trapd00r"
+	#"mirao"
+	#"amuse"
+	#"wedisagree"
+#)
+ZSH_THEME_RANDOM_IGNORED=(
+	#ipygmalion 
+	#tjkirch_mod
+	emotty
+)
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -79,11 +89,14 @@ plugins=(
   bundler
   dotenv
   rake
-  rbenv
-#  ruby
   nvm
   npm
   node
+  jsontools
+  json
+  copydir
+  dirhistory
+  zsh-autosuggestions
   jake-node
   nmap
   colorize
@@ -121,4 +134,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+#source /home/kober/Desktop/kober-git/i3status-bar/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/kober/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#export PATH="$PATH:~/.local/bin/"
+#export PATH="/home/kober/.local/bin"
 eval $(thefuck --alias)
