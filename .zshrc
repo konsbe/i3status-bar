@@ -96,7 +96,7 @@ plugins=(
   json
   copydir
   dirhistory
-  zsh-autosuggestions
+  zsh-autosuggestions #installation via github
   jake-node
   nmap
   colorize
