@@ -18,8 +18,8 @@ switch to i3 mode and go install
 ```unzip Downloads/fontawesome-free-6.1.2-web.zip``` <br/>
 ```mkdir ~/.fonts```<br/>
 ```cp fontawesome-free-6.1.2-web/webfonts/fa-brands-400.ttf fontawesome-free-6.1.2-web/webfonts/fa-regular-400.ttf fontawesome-free-6.1.2-web/webfonts/fa-solid-900.ttf fontawesome-free-6.1.2-web/webfonts/fa-v4compatibility.ttf ~/.fonts``` .ttf files (and otfs if any error exist)<br/>
-```git apt-get update -y```<br/>
-```git apt-get install -y gnome-screenshot```<br/>
+```sudo apt-get update -y```<br/>
+```sudo apt-get install -y gnome-screenshot```<br/>
 ```sudo apt-get install thunar```<br/>
 ```sudo apt update && sudo apt install compton```<br/>
 ```sudo apt-get install rofi``` and hit ```rofi-theme-selector```<br/>
@@ -67,7 +67,7 @@ bash scripting cheatsheet: https://devhints.io/bash<br/>
 ```curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh```<br/>
 ```source $HOME/.cargo/env```<br/>
 ```rustc --version```<br/>
-```rusttup update```<br/>
+```rustup update```<br/>
 ```sudo apt install cargo```<br/>
 ```cargo install gitui```
 ### thefuck
