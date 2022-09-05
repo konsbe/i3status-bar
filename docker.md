@@ -29,7 +29,7 @@
 ### run an image
 ``` docker run <image-name>``` <br/>
 ``` docker run -p 8000:3000 <image-name>``` port mapping localhost:dockerIP <br/>
-``` docker run -it -dp 3006:3000 <image-name | image-ID>
+``` docker run -it -dp 3006:3000 <image-name | image-ID>```
 
 ### change name or tag
 ```docker tag OldName:tag NewName:tag```<br/>
