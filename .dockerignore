@@ -1,0 +1,10 @@
+#Anything not usefby the build system should go here.
+Dockerfile
+.dockerignore
+.gitignore
+README.md
+
+#Artifacts that will be build during image creation.
+#This should contain all files created during 'npm ruun build'
+build
+node_modules
