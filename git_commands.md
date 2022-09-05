@@ -2,6 +2,8 @@
 -----------------------------------------------------------------------------------------------------
 
 ```ssh-keygen -t rsa -b 4096 -C "<your email inside quotes"```<br/> 
+```eval "$(ssh-agent -s)"```<br/>
+```ssh-add ~/.ssh/id_rsa```<br/>
 ```cat .ssh/id_rsa.pub ```<br/> 
 ```git config --global user.name <your-git-name>```<br/> 
 ```git config --global user.email <your-git-email>```<br/> 
