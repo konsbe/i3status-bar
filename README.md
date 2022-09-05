@@ -95,3 +95,16 @@ bash scripting cheatsheet: https://devhints.io/bash<br/>
 ```sudo /etc/acpi/asus-keyboard-backlight.sh down```
 ```sudo  /etc/acpi/asus-keyboard-backlight.sh up```
 
+#### Bluetooth
+
+```bluetoothctl```<br/>
+```power on```<br/>
+```agent on```<br/>
+```default-agent```<br/>
+```scan on```<br/>
+```pair 00:1D:43:6D:03:26```<br/>
+```connect 00:1D:43:6D:03:26```<br/>
+```trust 00:1D:43:6D:03:26```<br/>
+```scan off```<br/>
+```exit```<br/>
+```pulseaudio -k``` to stop deamon if errors```<br/>
