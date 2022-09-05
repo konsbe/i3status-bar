@@ -96,7 +96,8 @@ bash scripting cheatsheet: https://devhints.io/bash<br/>
 ```sudo  /etc/acpi/asus-keyboard-backlight.sh up```
 
 #### Bluetooth
-
+```sudo apt install blueman```<br/>
+```sudo apt install bluez bluez-obexd```<br/>
 ```bluetoothctl```<br/>
 ```power on```<br/>
 ```agent on```<br/>
