@@ -6,7 +6,7 @@ for everyone that loves a better view of linux experience. my docs for status ba
 
 switch to i3 mode and go install
 
-```sudo apt install vim``` <br/>
+```sudo apt-get install vim``` <br/>
 ```sudo update-alternatives --config editor``` and set vim as editor<br/>
 
 ```sudo apt-get install feh```<br/>
@@ -21,7 +21,7 @@ switch to i3 mode and go install
 ```sudo apt-get update -y```<br/>
 ```sudo apt-get install -y gnome-screenshot```<br/>
 ```sudo apt-get install thunar```<br/>
-```sudo apt update && sudo apt install compton```<br/>
+```sudo apt-get update && sudo apt-get install compton```<br/>
 ```sudo apt-get install rofi``` and hit ```rofi-theme-selector```<br/>
 ```sudo apt-get install -y i3blocks``` => ```cp /etc/i3blocks.conf ~/.config/i3/i3blocks.conf```<br/>
 
@@ -73,8 +73,8 @@ bash scripting cheatsheet: https://devhints.io/bash<br/>
 ### thefuck
 [official: github page](https://github.com/nvbn/thefuck)
 
-```sudo apt update```<br/>
-```sudo apt install python3-dev python3-pip python3-setuptools```<br/>
+```sudo apt-get update```<br/>
+```sudo apt-get install python3-dev python3-pip python3-setuptools```<br/>
 ```pip3 install thefuck --user```<br/>
 ```pip install thefuck```<br/>
 
@@ -87,8 +87,8 @@ bash scripting cheatsheet: https://devhints.io/bash<br/>
 ### Screen Brightness
 
 ```sudo add-apt-repository ppa:apandada1/brightness-controller```<br/>
-```sudo apt update```<br/>
-```sudo apt install brightness-controller```<br/>
+```sudo apt-get update```<br/>
+```sudo apt-get install brightness-controller```<br/>
 
 #### Keyboard brightness
 
@@ -96,8 +96,8 @@ bash scripting cheatsheet: https://devhints.io/bash<br/>
 ```sudo  /etc/acpi/asus-keyboard-backlight.sh up```
 
 #### Bluetooth
-```sudo apt install blueman```<br/>
-```sudo apt install bluez bluez-obexd```<br/>
+```sudo apt-get install blueman```<br/>
+```sudo apt-get install bluez bluez-obexd```<br/>
 ```bluetoothctl```<br/>
 ```power on```<br/>
 ```agent on```<br/>
