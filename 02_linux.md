@@ -55,7 +55,13 @@
   ```nmap -Pn ```   or   ```nmap -Sp``` <br/>
   ```wget --server-response --spider  https://developer.mozilla.org```<br/>
   ```wget ‐‐span-hosts ‐‐level=inf ‐‐recursive https://developer.mozilla.org``` download the page as an index.html <br/>
-  ```htop``` nteractively monitor the system's vital resources or server's processes in real time.
+  ```htop``` interactively monitor the system's vital resources or server's processes in real time.
+
+## VPN Settings
+```sudo tail -f /var/log/syslog``` to check your logs<br/>
+```sudo vim /etc/resolv.conf```<br/>
+```sudo vim /etc/hosts```<br/>
+
 
 
   
