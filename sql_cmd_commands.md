@@ -22,5 +22,4 @@
 ```\c <db-name>``` connect to a database <br/>
 ```\dt``` list all tables of the current database <br/>
 ``` \d <table-name>``` display properties of the table <br/>
-
 ``` \d+ <table-name>``` display table <br/>
