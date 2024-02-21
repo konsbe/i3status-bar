@@ -1,7 +1,7 @@
 # [i3status-bar](https://github.com/vivien/i3blocks)
 for everyone that loves a better view of linux experience. my docs for status bar in i3 and also some infos how to get started to customize and a cheatsheet for terminal commands,   &lt;3 have fun! works on Kali  &amp; Ubuntu 20.04
 #
-##### $ sudo apt update
+##### $ sudo apt-get update
 ##### $ sudo apt-get install i3
 
 switch to i3 mode and go install
@@ -68,7 +68,7 @@ bash scripting cheatsheet: https://devhints.io/bash<br/>
 ```source $HOME/.cargo/env```<br/>
 ```rustc --version```<br/>
 ```rustup update```<br/>
-```sudo apt install cargo```<br/>
+```sudo apt-get install cargo```<br/>
 ```cargo install gitui```
 ### thefuck
 [official: github page](https://github.com/nvbn/thefuck)
@@ -82,7 +82,7 @@ bash scripting cheatsheet: https://devhints.io/bash<br/>
 ### keepassxc
 [official page](https://keepassxc.org/download/#linux)
 
-```sudo apt install keepassxc```
+```sudo apt-get install keepassxc```
 
 ### Screen Brightness
 
