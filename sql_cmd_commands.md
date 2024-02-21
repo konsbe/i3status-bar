@@ -28,7 +28,7 @@
 ```sudo apt-get update```
 ```sudo apt-get install mysql-server``` <br/>
 ```sudo systemctl start mysql.service``` <br/>
-``` install mysql ``` <br/>
+``` SHOW GLOBAL VARIABLES LIKE 'PORT'; ``` to find in witch port mysql is running<br/>
 
 ### dbs and queries
 ```create database <db-name>;``` <br/>
